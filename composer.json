@@ -1,0 +1,31 @@
+{
+    "name": "inouet/file-cache",
+    "type": "library",
+    "description": "A simple PHP class for caching data in the filesystem.",
+    "keywords": ["cache", "file"],
+    "homepage": "http://github.com/inouet/file-cache",
+    "support": {
+        "issues": "https://github.com/inouet/file-cache/issues",
+        "source": "https://github.com/inouet/file-cache"
+    },
+    "authors": [
+        {
+            "name": "Taiji Inoue",
+            "email": "inudog@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "classmap": ["src/FileCache.php"]
+    }
+}
+
