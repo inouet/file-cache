@@ -20,10 +20,11 @@ $data = array(
     'age'  => 20,
     'sex'  => 'f',
 );
-
-$cache->save($id, $data);
+$lifetime = 3600; // cache lifetime (default: 3600)
+$cache->save($id, $data, $lifetime);
 
 $user = $cache->get($id);
+// return false if cache is expired or does not exist
 
 print_r($user);
 
@@ -49,6 +50,14 @@ $ tree /tmp/cache
 └── a2
     └── 24
         └── a224b17e63b8eb3103a8c4679b7de2072b598c99.cache
+```
+
+Delete cache
+
+```
+
+$cache->delete($id);
+
 ```
 
 ### Change cache directory
