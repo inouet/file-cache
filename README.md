@@ -51,3 +51,21 @@ $ tree /tmp/cache
         └── a224b17e63b8eb3103a8c4679b7de2072b598c99.cache
 ```
 
+### Change cache directory
+
+```
+<?php
+
+$options = array('cache_dir' => __DIR__.'/cache');
+
+$cache = new FileCache($options);
+$cache->save("key", "value");
+$ tree ./cache
+./cache
+└── 31
+    └── f3
+        └── 31f30ddbcb1bf8446576f0e64aa4c88a9f055e3c.cache
+
+2 directories, 1 file
+
+```
