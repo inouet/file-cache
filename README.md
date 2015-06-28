@@ -62,6 +62,8 @@ $cache->delete($id);
 
 ### Change cache directory
 
+set parameter "cache_dir" to constructor 
+
 ```
 <?php
 
